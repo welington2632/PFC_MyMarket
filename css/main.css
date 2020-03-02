@@ -74,6 +74,18 @@ section p {
     
 }
 
+.alpha {
+    position: absolute;
+    top: -2px;
+    left: -40px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    width: 150px;
+    text-align: center;
+    transform: rotate(-25deg);
+}
+
 #comunicao-img{
     width: 300px;
 }
@@ -148,6 +160,11 @@ footer {
     text-align: center;
     color: rgba(150, 145, 145, 1);
 
+}
+
+.aviso {
+    font-size: 12px;
+    color: rgba(214, 25, 25, 0.568);
 }
 
 .campo {
