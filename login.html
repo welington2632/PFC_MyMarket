@@ -1,48 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700, 900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-    <link rel="stylesheet" href="./css/login.css">
-    <link rel="stylesheet" href="./css/font.css">
-    <link rel="stylesheet" href="./css/element.css">
+    <title>MyMarket</title>
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1 class="white lg">MyMarket</h1>
 
-        <div class="box">
-            <div class="form-title">
-                <h3 class="green md">Entre na sua conta</h3>
+    <head>
+        <div class="head-container">
+            <a href="index.html" id="logo"> <img src="./img/Logo.svg" alt="MyMarket_Logo">
+            </a>
+            <nav>
+                <ul>
+                    <la class="item"><a href="index.html">Inicio</a></la>
+                    <la class="item"><a href="ajuda.html">Ajuda</a></la>
+                    <la class="item"><a href="sobre.html">Sobre</a></la>
+                    <la class="item" id="login-button"><a href="login.html">Já tenho um login <i
+                                class="fas fa-arrow-right"></i></a></la>
+                </ul>
+            </nav>
+        </div>
+    </head>
+    <main>
+        <div class="main-container">
+            <div class="description-container">
+                <img src="./img/comuniacao_flat.png" alt="" id="comunicao-img-login">
+                <div class="container-login">
+                    <p>Bem vindo ao MyMarket</p>
+                    <form action="">
+                        <div class="campo">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="input-email">
+                        </div>
+                        <div class="campo">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="input-senha">
+                        </div>
+                        <div class="campo"><input type="checkbox" name="lembrar-me" id="cblembrar">
+                            <label for="lembrar-me" id="lblLembrar">Lembrar-me</label>
+                        </div>
+                        <div class="campo">
+                            <input type="button" value="Entrar" id="btnEntrar">
+                        </div>                            
+                        <span id="nao-possui-conta">Não possui uma conta? <a id="link-registro" href="#">clique aqui</a></span>
+                    </form>
+                </div>
             </div>
-            <form action="" class="form">
-                <div class="input-text">
-                <label class="black sm"for="">Email</label>
-                <input class="form-input low-opc ssm" type="text" name="" id="" placeholder="Digite seu email aqui">
-                <span class="warning green"></span>
-                </div>
-
-                <div class="input-text">
-                <label class="black sm"for="">Senha</label>
-                <input class="form-input low-opc ssm" type="password" name="" id="" placeholder="Digite sua senha aqui">
-                <span class="warning green"></span>
-                </div>
-
-                <div class="container-legenda">
-                        <p class="esqueci-senha low-opc"><a href="#" class=" ssm link black">Esqueci minha senha</a></p>
-                </div>
-
-                <input class="button-green-br white" type="submit" value="Entrar">
-            </form>
-            <h4 class="ssm black">Não tem uma conta? <a href="./register.html" class="link ssm green">cadastra-se aqui</b></h4>
         </div>
-        <div class="button-green-outline white" id="sair">
-            <a href="index.html">Voltar</a>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <p>MyMarket</p>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-twitter-square"></i>
         </div>
-
-    </div>
+    </footer>
 </body>
+
 </html>

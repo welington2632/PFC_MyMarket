@@ -52,6 +52,7 @@ img {
 .description-container{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 section {
@@ -75,6 +76,9 @@ section p {
 
 #comunicao-img{
     width: 300px;
+}
+#comunicao-img-login{
+    width: 500px;
 }
 
 .button-container{
@@ -113,4 +117,68 @@ footer {
     justify-content: center;
     color: white;
     height: 100%;
+}
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(179, 179, 179, 0.2);
+    justify-content: center;
+    margin-left: 80px;
+    width: 350px;
+    height: 450px;
+}
+
+.container-login form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 50px;
+}
+
+.container-login p {
+    font-family: 'Raleway',Arial, Helvetica, sans-serif ;
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+}
+
+#nao-possui-conta {
+    font-size: 12px;
+    text-align: center;
+    color: rgba(150, 145, 145, 1);
+
+}
+
+.campo {
+    margin: 10px 0;
+    font-weight: 500;
+    color: rgb(150, 145, 145);
+}
+
+#link-registro{
+    color: #0099FF;
+    font-weight: bold;
+}
+
+#lblLembrar {
+    font-size: 14px;
+}
+
+#btnEntrar {
+    border: none;
+    background-color: rgb(0, 153, 255);
+    color: white;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+}
+
+#input-email, #input-senha {
+    border: none;
+    border-bottom: 1px solid rgba(150, 145, 145, 0.363);
+    background-color: rgba(150, 145, 145, 0);
+    width: 100%;
+    font-size: 12px;
+    color: rgba(150, 145, 145, 1);
 }
